@@ -1,0 +1,21 @@
+# IDE
+.idea/
+# Cache files
+.*cache*
+
+# Data files
+data/
+*.sql
+
+
+# Python files
+.env*
+__pycache__/
+venv*/
+
+# Local configuration
+local.yaml
+
+# Test files
+.coverage
+

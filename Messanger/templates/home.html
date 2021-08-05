@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<title>
+Home
+</title>
+<body>
+<nuv class="navbar navbar-expand-lg navbar-light bg-dark">
+    <ul>
+        <li><a href="{% url 'about-us' %}">About us</a></li>
+    </ul>
+    <ul>
+        <li><a href="{% url 'contacts' %}">Contacts</a></li>
+    </ul>
+    <ul>
+       <li><a href="{% url 'authors' %}">Authors</a></li>
+    </ul>
+</nuv>
+{% block content %}
+   <p>
+        <a href="{% url 'accounts:login' %}">Login</a>
+   </p>
+   <p>
+        <a href="{% url 'accounts:password_reset' %}">Change password</a>
+   </p>
+{% endblock %}
+</body>
+</html>
